@@ -1,0 +1,36 @@
+{
+    "description": "Manages train/test data versions",
+    "name": "Train Data manager",
+    "parameters": [
+        {
+            "name": "job_timestamp",
+            "helpText": "job time",
+            "label": "job time"
+        },
+        {
+            "name": "dt",
+            "helpText": "prefix of the old version to be enriched with the new dataset to create the new version.",
+            "label": "old version prefix"
+        },
+        {
+            "name": "new_dataset_path",
+            "helpText": "input file path for the new dataset.",
+            "label": "new dataset path."
+        },
+        {
+            "name": "bucket",
+            "helpText": "gcs bucket name.",
+            "label": "gcs bucket name,"
+        },
+        {
+            "name": "data_type",
+            "helpText": "type of new dataset [train/test]",
+            "label": "type of new data"
+        },
+        {
+            "name": "sample_fraction",
+            "helpText": "train/valid sample fraction",
+            "label": "train/valid sample fraction"
+        }
+    ]
+}
